@@ -3,17 +3,21 @@ from fpdf import FPDF
 import base64
 import os
 
-# Configuración de página
+# Configuración de página con modo oscuro forzado
 st.set_page_config(page_title="Registro Curso Python - Microsoft & Santander", layout="centered")
 
-# Título del formulario
+# Estilos para modo oscuro
 st.markdown("""
 <style>
+    body {
+        background-color: #0e1117;
+        color: #ffffff;
+    }
     .main {
-        background-color: #f5f7fa;
+        background-color: #1c1f26;
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
     }
     .stButton>button {
         background-color: #0066cc;
@@ -22,10 +26,14 @@ st.markdown("""
         font-weight: bold;
         padding: 10px 20px;
     }
+    header, .css-18ni7ap, .css-1d391kg, .css-hxt7ib {
+        background-color: #0e1117;
+    }
 </style>
 <div class="main">
 """, unsafe_allow_html=True)
 
+# Logos
 st.image("images/Banco_Santander_Logotipo.svg.png", width=120)
 st.image("images/msoft.png", width=120)
 st.image("images/ChatGPT Image 9 abr 2025, 04_36_04 p.m..png", width=120)
