@@ -26,9 +26,9 @@ st.markdown("""
 <div class="main">
 """, unsafe_allow_html=True)
 
-st.image("logos/santander.png", width=120)
-st.image("logos/microsoft.png", width=120)
-st.image("logos/tessena.png", width=120)
+st.image("images/Banco_Santander_Logotipo.svg.png", width=120)
+st.image("images/msoft.png", width=120)
+st.image("images/ChatGPT Image 9 abr 2025, 04_36_04 p.m..png", width=120)
 
 st.markdown("""
 ### Formulario de Inscripción - Curso Ciencia de Datos con Python
@@ -55,12 +55,12 @@ if st.button("📄 Generar constancia de registro"):
         pdf.add_page()
 
         # Agregar logos
-        if os.path.exists("logos/santander.png"):
-            pdf.image("logos/santander.png", x=10, y=8, w=40)
-        if os.path.exists("logos/microsoft.png"):
-            pdf.image("logos/microsoft.png", x=80, y=8, w=40)
-        if os.path.exists("logos/tessena.png"):
-            pdf.image("logos/tessena.png", x=150, y=8, w=40)
+        if os.path.exists("images/Banco_Santander_Logotipo.svg.png"):
+            pdf.image("images/Banco_Santander_Logotipo.svg.png", x=10, y=8, w=40)
+        if os.path.exists("images/msoft.png"):
+            pdf.image("images/msoft.png", x=80, y=8, w=40)
+        if os.path.exists("images/ChatGPT Image 9 abr 2025, 04_36_04 p.m..png"):
+            pdf.image("images/ChatGPT Image 9 abr 2025, 04_36_04 p.m..png", x=150, y=8, w=40)
 
         pdf.ln(30)
         pdf.set_font("Arial", 'B', 14)
